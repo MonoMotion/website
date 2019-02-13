@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import { Navbar } from 'react-bulma-components';
+import { Button, Navbar } from 'react-bulma-components';
 
 
 class App extends Component {
   render() {
     return (
-      <div classNameName="App">
+      <div className="App">
         <header>
           <Navbar role="navigation" aria-label="main navigation">
             <Navbar.Brand>
@@ -16,59 +16,55 @@ class App extends Component {
                 MonoMotion
               </Navbar.Item>
 
-              <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <Navbar.Burger role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-              </a>
+              </Navbar.Burger>
             </Navbar.Brand>
 
-            <div id="navbarBasicExample" className="navbar-menu">
-              <div className="navbar-start">
-                <a className="navbar-item">
-                  About
-                </a>
+            <Navbar.Menu id="navbarBasicExample">
+              <Navbar.Item>
+                About
+              </Navbar.Item>
 
-                <a className="navbar-item">
-                  Documentation
-                </a>
+              <Navbar.Item>
+                Documentation
+              </Navbar.Item>
 
-                <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link">
-                    Technology
-                  </a>
+              <Navbar.Item className="has-dropdown is-hoverable">
+                <Navbar.Link>
+                  Technology
+                </Navbar.Link>
 
-                  <div className="navbar-dropdown">
-                    <a className="navbar-item">
-                      Reficere
-                    </a>
-                    <a className="navbar-item">
-                      flom
-                    </a>
-                    <a className="navbar-item">
-                      servoarray
-                    </a>
-                    <a className="navbar-item">
-                      Trainer
-                    </a>
-                  </div>
-                </div>
+                <Navbar.Dropdown>
+                  <Navbar.Item>
+                    Reficere
+                  </Navbar.Item>
+                  <Navbar.Item>
+                    flom
+                  </Navbar.Item>
+                  <Navbar.Item>
+                    servoarray
+                  </Navbar.Item>
+                  <Navbar.Item>
+                    Trainer
+                  </Navbar.Item>
+                </Navbar.Dropdown>
+              </Navbar.Item>
 
-                <a className="navbar-item">
-                  Contact
-                </a>
-              </div>
+              <Navbar.Item>
+                Contact
+              </Navbar.Item>
 
-              <div className="navbar-end">
-                <div className="navbar-item">
-                  <div className="buttons">
-                    <a className="button is-primary">
-                      Try now
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <Navbar.Container position="end">
+                <Navbar.Item>
+                  <Button className="is-primary">
+                    Try now
+                  </Button>
+                </Navbar.Item>
+              </Navbar.Container>
+            </Navbar.Menu>
           </Navbar>
         </header>
       </div>
