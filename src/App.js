@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import 'bulma';
+import Navbar from 'react-bulma-components/lib/components/navbar';
+
 
 class App extends Component {
   render() {
     return (
       <div classNameName="App">
         <header>
-          <nav className="navbar" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-              <a className="navbar-item" href="https://bulma.io">
+          <Navbar role="navigation" aria-label="main navigation">
+            <Navbar.Brand>
+              <Navbar.Item href="https://bulma.io">
                 MonoMotion
-              </a>
+              </Navbar.Item>
 
               <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
               </a>
-            </div>
+            </Navbar.Brand>
 
             <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-start">
@@ -67,7 +68,7 @@ class App extends Component {
                 </div>
               </div>
             </div>
-          </nav>
+          </Navbar>
         </header>
       </div>
     );
