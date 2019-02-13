@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Container, Heading } from 'react-bulma-components'
+import { Hero, Container, Heading, Button } from 'react-bulma-components'
 
 import Header from './Header'
 
@@ -18,6 +18,14 @@ const Top = () => (
           <Heading subtitle>
             Design your robots' motion without the hassle
           </Heading>
+          <div>
+            <Button color="white">
+              See details
+            </Button>
+            <Button color="info">
+              Try now (alpha)
+            </Button>
+          </div>
         </Container>
       </Hero.Body>
     </Hero>
