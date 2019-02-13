@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button, Navbar } from 'react-bulma-components';
+import React from 'react'
+import { Button, Navbar } from 'react-bulma-components'
 
 const Header = () => (
   <header>
