@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from 'react-bulma-components/lib/components/navbar';
+import 'react-bulma-components/dist/react-bulma-components.min.css';
+import { Navbar } from 'react-bulma-components';
 
 
 class App extends Component {
