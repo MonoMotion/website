@@ -4,13 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link, withRouter } from 'react-router-dom'
 import { Icon } from 'react-bulma-components'
 
-const Header = () => (
+const Header = (props) => (
   <header>
     <Navbar role="navigation" aria-label="main navigation">
       <Navbar.Brand>
-        <Navbar.Item href="https://bulma.io">
+        <Navbar.Item renderAs={Link} to="/">
           MonoMotion
         </Navbar.Item>
 
@@ -43,12 +44,15 @@ const Header = () => (
       </Navbar.Brand>
 
       <Navbar.Menu id="navbar-menu">
-        <Navbar.Item href="#about" renderAs={AnchorLink}>
+        <Navbar.Item
+          to="/#about"
+          href="#about"
+          renderAs={props.location.pathname === "/" ? AnchorLink : Link}>
           About
         </Navbar.Item>
 
         <Navbar.Item className="has-dropdown is-hoverable">
-          <Navbar.Link>
+          <Navbar.Link renderAs={Link} to="/technology">
             Technology
           </Navbar.Link>
 
@@ -90,4 +94,4 @@ const Header = () => (
   </header>
 )
 
-export default Header
+export default withRouter(Header)
