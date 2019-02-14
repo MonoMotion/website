@@ -51,7 +51,7 @@ const TimelineSection = () => (
         </TimelineElement>
         <TimelineElement
           title="Trainer"
-          subtitle="モーションを自動でデザイン。"
+          subtitle="モーションを自動で改善。"
           background="rgb(33, 150, 243)"
           icon={faMagic}
         >
