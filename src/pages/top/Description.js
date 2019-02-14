@@ -1,9 +1,9 @@
 import React from 'react'
 import { Heading, Button, Container, Columns } from 'react-bulma-components'
 
-import BlendMotionImg from './images/blendmotion.png'
-import TrainerImg from './images/trainer.png'
-import RunnerImg from './images/runner.png'
+import BlendMotionImg from './../../images/blendmotion.png'
+import TrainerImg from './../../images/trainer.png'
+import RunnerImg from './../../images/runner.png'
 
 const DescriptionRow = (props) => {
   const hero = props.hero

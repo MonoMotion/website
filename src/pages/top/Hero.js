@@ -3,7 +3,7 @@ import { Hero, Container, Heading, Button } from 'react-bulma-components'
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-import Header from './Header'
+import Header from '../../Header'
 
 const Top = () => (
   <Hero color="light" size="fullheight">
