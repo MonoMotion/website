@@ -16,14 +16,14 @@ const Top = () => (
             MonoMotion Robotics Framework
           </Heading>
           <Heading subtitle>
-            Design your robots' motion without the hassle
+            Design your robots' motion <strong>without the hassle</strong>
           </Heading>
           <div>
             <Button color="white">
               See details
             </Button>
             <Button color="info">
-              Try now (alpha)
+              GitHub
             </Button>
           </div>
         </Container>

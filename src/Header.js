@@ -53,7 +53,7 @@ const Header = () => (
         <Navbar.Container position="end">
           <Navbar.Item>
             <Button color="info">
-              Try now
+              GitHub
             </Button>
           </Navbar.Item>
         </Navbar.Container>

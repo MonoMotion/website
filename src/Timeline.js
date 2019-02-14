@@ -28,7 +28,7 @@ const TimelineSection = () => (
   <Section className="has-background-dark">
     <Container>
       <Heading className="has-text-light">
-        How to make your robots' motion with MonoMotion framework
+        ロボットを動かす流れ
       </Heading>
     </Container>
     <Container>
