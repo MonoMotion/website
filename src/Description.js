@@ -23,10 +23,17 @@ const DescriptionRow = (props) => {
   return (
     <Container id={props.id}>
       <Columns>
-        <Columns.Column>
+        <Columns.Column className="is-hidden-desktop">
+          {hero}
+        </Columns.Column>
+        <Columns.Column className="is-hidden-desktop">
+          {desc}
+        </Columns.Column>
+
+        <Columns.Column className="is-hidden-touch is-hidden-only-desktop">
           {props.left ? desc : hero}
         </Columns.Column>
-        <Columns.Column>
+        <Columns.Column className="is-hidden-touch is-hidden-only-desktop">
           {props.right ? desc : hero}
         </Columns.Column>
       </Columns>
