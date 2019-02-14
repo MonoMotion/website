@@ -5,7 +5,7 @@ import Header from './Header'
 
 const Top = () => (
   <div>
-    <Hero color="primary" size="medium">
+    <Hero color="light" size="fullheight">
       <Hero.Head>
         <Header />
       </Hero.Head>

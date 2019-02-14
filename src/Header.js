@@ -52,7 +52,7 @@ const Header = () => (
 
         <Navbar.Container position="end">
           <Navbar.Item>
-            <Button color="light">
+            <Button color="info">
               Try now
             </Button>
           </Navbar.Item>
