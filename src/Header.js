@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button, Navbar } from 'react-bulma-components'
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 const Header = () => (
   <header>
     <Navbar role="navigation" aria-label="main navigation">
@@ -17,12 +19,8 @@ const Header = () => (
       </Navbar.Brand>
 
       <Navbar.Menu id="navbarBasicExample">
-        <Navbar.Item>
+        <Navbar.Item href="#about" renderAs={AnchorLink}>
           About
-        </Navbar.Item>
-
-        <Navbar.Item>
-          Documentation
         </Navbar.Item>
 
         <Navbar.Item className="has-dropdown is-hoverable">
@@ -52,7 +50,7 @@ const Header = () => (
 
         <Navbar.Container position="end">
           <Navbar.Item>
-            <Button color="info">
+            <Button color="info" href="https://github.com/MonoMotion" target="blank_" renderAs="a">
               GitHub
             </Button>
           </Navbar.Item>

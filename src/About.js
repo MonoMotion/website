@@ -3,7 +3,7 @@ import React from 'react'
 import { Heading, Box, Button, Container } from 'react-bulma-components'
 
 const AboutSection = (props) => (
-  <Container>
+  <Container id="about">
     <Heading>MonoMotionフレームワークで、ロボットを自在に動かそう。</Heading>
     <Box>
       <Heading subtitle>
