@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "bulma": "^0.7.4",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-bulma-components": "2.3.0",
     "react-dom": "^16.8.1",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "react-vertical-timeline-component": "^2.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
