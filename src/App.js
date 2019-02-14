@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Top from './pages/top'
+import Tech from './pages/technology'
 
 import {
   BrowserRouter as Router,
@@ -9,7 +10,10 @@ import {
 
 const App = () => (
   <Router>
-    <Route exact path="/" component={Top} />
+    <div>
+      <Route exact path="/" component={Top} />
+      <Route path="/technology" component={Tech} />
+    </div>
   </Router>
 )
 
