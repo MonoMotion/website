@@ -12,7 +12,7 @@ import { Section } from 'react-bulma-components'
 
 const App = () => (
   <div className="App">
-    <Section>
+    <Section paddingless>
       <Top />
     </Section>
 
@@ -32,7 +32,7 @@ const App = () => (
       <Release />
     </Section>
 
-    <Section>
+    <Section paddingless>
       <Footer />
     </Section>
   </div>
