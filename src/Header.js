@@ -1,7 +1,10 @@
 import React from 'react'
 import { Button, Navbar } from 'react-bulma-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Icon } from 'react-bulma-components'
 
 const Header = () => (
   <header>
@@ -9,6 +12,18 @@ const Header = () => (
       <Navbar.Brand>
         <Navbar.Item href="https://bulma.io">
           MonoMotion
+        </Navbar.Item>
+
+        <Navbar.Item className="is-hidden-desktop" renderAs="a" href="https://github.com/MonoMotion" target="_blank">
+          <Icon>
+            <FontAwesomeIcon icon={faGithub} />
+          </Icon>
+        </Navbar.Item>
+
+        <Navbar.Item className="is-hidden-desktop" renderAs="a" href="https://twitter.com/monomotionhq" target="_blank">
+          <Icon>
+            <FontAwesomeIcon icon={faTwitter} />
+          </Icon>
         </Navbar.Item>
 
         <Navbar.Burger role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -49,10 +64,16 @@ const Header = () => (
         </Navbar.Item>
 
         <Navbar.Container position="end">
-          <Navbar.Item>
-            <Button color="info" href="https://github.com/MonoMotion" target="blank_" renderAs="a">
-              GitHub
-            </Button>
+          <Navbar.Item className="is-hidden-touch is-hidden-only-desktop" renderAs="a" href="https://github.com/MonoMotion" target="_blank">
+            <Icon>
+              <FontAwesomeIcon icon={faGithub} />
+            </Icon>
+          </Navbar.Item>
+
+          <Navbar.Item className="is-hidden-touch is-hidden-only-desktop" renderAs="a" href="https://twitter.com/monomotionhq" target="_blank">
+            <Icon>
+              <FontAwesomeIcon icon={faTwitter} />
+            </Icon>
           </Navbar.Item>
         </Navbar.Container>
       </Navbar.Menu>

@@ -42,7 +42,7 @@ const Description = () => (
       subtitle="モデル作成を早く簡単に。"
       link="/"
       hero={
-        <iframe title="reficere-movie" width="560" height="315" src="https://www.youtube.com/embed/nECBQznYx9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe title="reficere-movie" width="100%" height="315" src="https://www.youtube.com/embed/nECBQznYx9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       }
       left
     >
