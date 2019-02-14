@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWeight, faHandPointer, faMagic, faMicrochip } from '@fortawesome/free-solid-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-import { Columns, Heading, Section, Button, Container, Icon } from 'react-bulma-components'
+import { Columns, Heading, Button, Container, Icon } from 'react-bulma-components'
 
 
 const TimelineElement = (props) => (
@@ -21,7 +21,7 @@ const TimelineElement = (props) => (
 
 
 const TimelineSection = () => (
-  <Section className="has-background-dark">
+  <div>
     <Container>
       <Heading className="has-text-light">
         MonoMotionは、大きく分けて以下の4ステップで構成されています:
@@ -59,7 +59,7 @@ const TimelineSection = () => (
         />
       </VerticalTimeline>
     </Container>
-  </Section>
+  </div>
 )
 
 export default TimelineSection

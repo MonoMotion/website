@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Button, Section, Container, Columns } from 'react-bulma-components'
+import { Heading, Button, Container, Columns } from 'react-bulma-components'
 
 import BlendMotionImg from './images/blendmotion.png'
 import TrainerImg from './images/trainer.png'
@@ -21,18 +21,16 @@ const DescriptionRow = (props) => {
   )
 
   return (
-  <Section id={props.id}>
-      <Container>
-        <Columns>
-          <Columns.Column>
-            {props.left ? desc : hero}
-          </Columns.Column>
-          <Columns.Column>
-            {props.right ? desc : hero}
-          </Columns.Column>
-        </Columns>
-      </Container>
-    </Section>
+    <Container id={props.id}>
+      <Columns>
+        <Columns.Column>
+          {props.left ? desc : hero}
+        </Columns.Column>
+        <Columns.Column>
+          {props.right ? desc : hero}
+        </Columns.Column>
+      </Columns>
+    </Container>
   )
 }
 

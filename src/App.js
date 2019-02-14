@@ -8,15 +8,33 @@ import Description from './Description'
 import Footer from './Footer'
 import Release from './Release'
 
+import { Section } from 'react-bulma-components'
 
 const App = () => (
   <div className="App">
-    <Top />
-    <About />
-    <Timeline />
-    <Description />
-    <Release />
-    <Footer />
+    <Section>
+      <Top />
+    </Section>
+
+    <Section>
+      <About />
+    </Section>
+
+    <Section className="has-background-dark">
+      <Timeline />
+    </Section>
+
+    <Section>
+      <Description />
+    </Section>
+
+    <Section paddingless>
+      <Release />
+    </Section>
+
+    <Section>
+      <Footer />
+    </Section>
   </div>
 )
 
