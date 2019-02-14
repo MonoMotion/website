@@ -26,14 +26,23 @@ const Header = () => (
           </Icon>
         </Navbar.Item>
 
-        <Navbar.Burger role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <Navbar.Burger
+          role="button"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar-menu"
+          onClick={(e) => {
+            e.target.classList.toggle("is-active")
+            document.getElementById(e.target.dataset.target).classList.toggle("is-active")
+          }}
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </Navbar.Burger>
       </Navbar.Brand>
 
-      <Navbar.Menu id="navbarBasicExample">
+      <Navbar.Menu id="navbar-menu">
         <Navbar.Item href="#about" renderAs={AnchorLink}>
           About
         </Navbar.Item>
