@@ -4,6 +4,7 @@ import 'react-bulma-components/dist/react-bulma-components.min.css'
 import Top from './Top'
 import Timeline from './Timeline'
 import About from './About'
+import Footer from './Footer'
 
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <Top />
     <About />
     <Timeline />
+    <Footer />
   </div>
 )
 
