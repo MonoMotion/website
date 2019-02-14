@@ -1,14 +1,16 @@
 import React from 'react'
-import 'react-bulma-components/dist/react-bulma-components.min.css'
 
 import Top from './pages/top'
 
-import { Section } from 'react-bulma-components'
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
 
 const App = () => (
-  <div className="App">
-    <Top />
-  </div>
+  <Router>
+    <Route exact path="/" component={Top} />
+  </Router>
 )
 
 export default App
