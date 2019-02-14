@@ -6,6 +6,7 @@ import Timeline from './Timeline'
 import About from './About'
 import Description from './Description'
 import Footer from './Footer'
+import Release from './Release'
 
 
 const App = () => (
@@ -14,6 +15,7 @@ const App = () => (
     <About />
     <Timeline />
     <Description />
+    <Release />
     <Footer />
   </div>
 )
