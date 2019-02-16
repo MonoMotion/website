@@ -57,7 +57,7 @@ const Header = (props) => (
           </Navbar.Link>
 
           <Navbar.Dropdown>
-            <Navbar.Item>
+            <Navbar.Item renderAs={Link} to="/technology/reficere">
               Reficere
             </Navbar.Item>
             <Navbar.Item>
