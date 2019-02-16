@@ -22,7 +22,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 図1:
 
-![図1](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\図1.png)
+![図1](./images/fig1.png)
 
 ### 測定器具
 
@@ -30,11 +30,11 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 写真1: 重心センサ 裏(地面側)から
 
-![写真1](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\写真1.jpg)
+![写真1](./images/pic1.jpg)
 
 写真2: 重心センサ ロードセルをメインに
 
-![写真2](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\写真2.jpg)
+![写真2](./images/pic2.jpg)
 
 重心センサには500gのロードセル(金属棒中央のゆがみによって重さを精密に量るセンサ)4つを使いました。CNCでMDFボードを少し削り、ひずみを持てる余裕を作ったん落ちにネジで固定しています。地面につく側はネジをナットで浮かせて作りました。このあたりの設計は適当極まりないので、参考程度です。
 
@@ -52,13 +52,13 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 図2:
 
-![図2](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\図2.png)
+![図2](./images/fig2.png)
 
 図2のように、上位リンクを角度θだけ曲げたときの足裏での重心位置の変化量をx_1とすると、重心周りのモーメント和から、以下の式1が与えられます。
 
 式1: h_n-1を求める計算式
 
-![式1](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\式1.png)
+![式1](./images/stmt1.png)
 
 今回では上位リンクの重量は与えることになっているので、この測定によりh_n-1は全て既知の値で表すことができます。
 
@@ -66,7 +66,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 式1.1: h_nの別の計算式
 
-![式1.1](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\式1.1.png)
+![式1.1](./images/stmt1.1.png)
 
 ##### 実装
 
@@ -82,7 +82,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 図3:
 
-![図3](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\図3.png)
+![図3](./images/fig3.png)
 
 今回では簡単のため(且つこの制限によってReficereを使用可能な場合が限られることはそれほど多くないだろうという推測もあり)、α_n + α_n-1 = 90°としましたが、理論上ではこの角度は何度でも、少し計算式をいじることで対応可能だと思います。
 
@@ -92,7 +92,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 式2: 重心位置不動の状態を示す式
 
-![式2](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\式2.png)
+![式2](./images/stmt2.png)
 
 ##### 実装
 
@@ -110,11 +110,11 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 図4: βの示す角度
 
-![図4](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\図4.png)
+![図4](./images/fig4.png)
 
 図5: 測定3の全体像
 
-![図5](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\図5.png)
+![図5](./images/fig5.png)
 
 測定3での一番重要な点は、図5で、ターゲットリンクの重心位置と上位リンクの重心位置を結んだ線(重心線)が地面と垂直になる点です。これによって足裏での重心位置の変化量を計算する際のモーメントでの腕の長さが2通りで表すことができます。
 
@@ -126,7 +126,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 式3: γとβの関係式
 
-![式3](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\式3.png)
+![式3](./images/stmt3.png)
 
 これはβが正しい値のときにこの式によって算出されるγを使用すると、ターゲットリンクの重心位置と上位リンクの重心位置を結んだ線が地面と垂直になるということを示しています。
 
@@ -134,7 +134,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 図6: 長さmの定義
 
-![図6](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\図6.png)
+![図6](./images/fig6.png)
 
 式4: mの算出方法1
 
@@ -146,7 +146,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 式4: 重心線が地面と垂直になる状態式
 
-![式4](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\式4.png)
+![式4](./images/stmt4.png)
 
 この式は右辺と左辺で別々に
 
@@ -158,7 +158,7 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 グラフ1: 測定3の理論値に基づいたグラフ
 
-![グラフ1](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\グラフ1.png)
+![グラフ1](./images/plot1.png)
 
 グラフ1で緑(γ)は、横軸βによって式3から算出したγ[度]、赤(x_3)はw_nを実測した値から導いた、図6の状態でのロボット全体の重心位置[mm]で、計測には関係ない参考値です。
 
@@ -172,8 +172,8 @@ Reficereではその問題を大幅に改善し、あるリンクより上に位
 
 式5: w_nの計算式
 
-![式5](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\式5.png)
+![式5](./images/stmt5.png)
 
 式6: H_nの計算式
 
-![式6](C:\Users\TakutoYamana\OneDrive\Projects\Reficere\詳解\式6.png)
+![式6](./images/stmt6.png)
