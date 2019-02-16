@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Header from '../../Header'
 
 const Top = () => (
-  <Hero color="light" size="fullheight">
+  <Hero color="dark" size="fullheight">
     <Hero.Head>
       <Header />
     </Hero.Head>
