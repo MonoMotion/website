@@ -29,7 +29,7 @@ const Tech = () => (
             </Tile>
           </Tile>
           <Tile kind="parent">
-            <Tile renderAs="a" kind="child" notification color="info" to="/technology/flom">
+            <Tile renderAs={Link} kind="child" notification color="info" to="/technology/flom">
               <Heading>flom モーションのためのライブラリ</Heading>
               <Heading subtitle>MonoMotionを裏で支える技術</Heading>
             </Tile>

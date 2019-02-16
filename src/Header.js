@@ -60,7 +60,7 @@ const Header = (props) => (
             <Navbar.Item renderAs={Link} to="/technology/reficere">
               Reficere
             </Navbar.Item>
-            <Navbar.Item>
+            <Navbar.Item renderAs={Link} to="/technology/flom">
               flom
             </Navbar.Item>
             <Navbar.Item>
