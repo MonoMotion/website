@@ -23,6 +23,10 @@ const Tech = () => (
               <Heading>Trainer</Heading>
               <Heading subtitle>学習の裏側</Heading>
             </Tile>
+            <Tile renderAs={Link} kind="child" notification color="primary" to="/technology/effectors">
+              <Heading>エフェクタについて</Heading>
+              <Heading subtitle>汎用化のミソ</Heading>
+            </Tile>
             <Tile renderAs="a" kind="child" notification color="warning" to="/technology/servoarray">
               <Heading>servoarray</Heading>
               <Heading subtitle>モーションがあなたのロボットで動くまで</Heading>
