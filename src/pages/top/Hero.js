@@ -1,17 +1,24 @@
 import React from 'react'
 import { Hero, Container, Heading, Button } from 'react-bulma-components'
-
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Header from '../../Header'
+import videoSource from '../../images/background.webm'
 
-import bgVideo from '../../images/background.webm'
+import styled from 'styled-components'
+
+const BackgroundVideo = styled.video`
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+`
 
 const Top = () => (
   <Hero color="dark" size="fullheight">
-    <video autoPlay muted loop>
-      <source src={bgVideo} type="video/webm" />
-    </video>
+    <BackgroundVideo autoPlay muted loop>
+      <source src={videoSource} type="video/webm" />
+    </BackgroundVideo>
 
     <Hero.Head>
       <Header />
