@@ -5,8 +5,14 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import Header from '../../Header'
 
+import bgVideo from '../../images/background.webm'
+
 const Top = () => (
   <Hero color="dark" size="fullheight">
+    <video autoPlay muted loop>
+      <source src={bgVideo} type="video/webm" />
+    </video>
+
     <Hero.Head>
       <Header />
     </Hero.Head>
