@@ -1,5 +1,6 @@
 import React from 'react'
 import { Heading, Button, Container, Columns } from 'react-bulma-components'
+import { Link } from 'react-router-dom'
 
 import BlendMotionImg from './../../images/blendmotion.png'
 import TrainerImg from './../../images/trainer.png'
@@ -14,9 +15,13 @@ const DescriptionRow = (props) => {
       <p>
         {props.children}
       </p>
-      <Button href={props.link}>
-        技術について
-      </Button>
+      {
+        props.to
+        ? <Button renderAs={Link} to={props.to}>
+            技術について
+          </Button>
+        : null
+      }
     </div>
   )
 
@@ -47,7 +52,7 @@ const Description = () => (
       id="description-reficere"
       title="Refirece"
       subtitle="モデル作成を早く簡単に。"
-      link="/"
+      to="/technology/reficere"
       hero={
         <iframe title="reficere-movie" width="100%" height="315" src="https://www.youtube.com/embed/nECBQznYx9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       }
@@ -59,7 +64,6 @@ const Description = () => (
       id="description-blendmotion"
       title="BlendMotion"
       subtitle="モーションをデザインする。"
-      link="/"
       hero={
         <img src={BlendMotionImg} alt="BlendMotion" />
       }
@@ -71,7 +75,6 @@ const Description = () => (
       id="description-trainer"
       title="Trainer"
       subtitle="モーションを自動で改善。"
-      link="/"
       hero={
         <img src={TrainerImg} alt="Trainer" />
       }
@@ -83,7 +86,6 @@ const Description = () => (
       id="description-flom-runner"
       title="flom-runner"
       subtitle="あとは実機で動かすだけ。"
-      link="/"
       hero={
         <img src={RunnerImg} alt="Runner" />
       }
