@@ -6,20 +6,15 @@ import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Link, withRouter } from 'react-router-dom'
 import { Icon } from 'react-bulma-components'
-import styled from 'styled-components'
 
 import logo from './images/Dark_horizontal.svg'
-
-const Logo = styled.img`
-  width: 70%;
-`
 
 const Header = (props) => (
   <header>
     <Navbar role="navigation" aria-label="main navigation">
       <Navbar.Brand>
         <Navbar.Item renderAs={Link} to="/">
-          <Logo src={logo} alt="MonoMotion" />
+          <img src={logo} alt="MonoMotion" />
         </Navbar.Item>
 
         <Navbar.Item className="is-hidden-desktop" renderAs="a" href="https://github.com/MonoMotion" target="_blank">
