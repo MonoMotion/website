@@ -8,6 +8,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bulma": "^0.7.4",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.0.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-anchor-link-smooth-scroll": "^1.0.11",

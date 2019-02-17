@@ -19,17 +19,21 @@ const Tech = () => (
       <Tile size={8} vertical>
         <Tile>
           <Tile kind="parent" vertical>
-            <Tile renderAs="a" kind="child" notification color="primary" to="/technology/trainer">
-              <Heading>Trainer</Heading>
-              <Heading subtitle>学習の裏側</Heading>
+            <Tile renderAs={Link} kind="child" notification color="primary" to="/technology/effectors">
+              <Heading>エフェクタについて</Heading>
+              <Heading subtitle>汎用化のミソ</Heading>
             </Tile>
-            <Tile renderAs="a" kind="child" notification color="warning" to="/technology/servoarray">
+            <Tile renderAs="a" kind="child" notification color="warning" to="https://github.com/MonoMotion/servoarray" target="_blank">
               <Heading>servoarray</Heading>
-              <Heading subtitle>モーションがあなたのロボットで動くまで</Heading>
+              <Heading subtitle>サーボドライバ間の差異をなくす</Heading>
+            </Tile>
+            <Tile renderAs="a" kind="child" notification color="dark" href="https://github.com/MonoMotion/silverbullet" target="_blank">
+              <Heading>silverbullet</Heading>
+              <Heading subtitle>pybulletを劇的に簡単に使えるライブラリ</Heading>
             </Tile>
           </Tile>
           <Tile kind="parent">
-            <Tile renderAs="a" kind="child" notification color="info" to="/technology/flom">
+            <Tile renderAs={Link} kind="child" notification color="info" to="/technology/flom">
               <Heading>flom モーションのためのライブラリ</Heading>
               <Heading subtitle>MonoMotionを裏で支える技術</Heading>
             </Tile>
