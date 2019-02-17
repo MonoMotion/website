@@ -23,7 +23,7 @@ const Tech = () => (
               <Heading>エフェクタについて</Heading>
               <Heading subtitle>汎用化のミソ</Heading>
             </Tile>
-            <Tile renderAs="a" kind="child" notification color="warning" to="https://github.com/MonoMotion/servoarray" target="_blank">
+            <Tile renderAs="a" kind="child" notification color="warning" href="https://github.com/MonoMotion/servoarray" target="_blank">
               <Heading>servoarray</Heading>
               <Heading subtitle>サーボドライバ間の差異をなくす</Heading>
             </Tile>
