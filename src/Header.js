@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Link, withRouter } from 'react-router-dom'
 import { Icon } from 'react-bulma-components'
 
-import logo from './images/Dark_horizontal.svg'
+import logo from './images/Light_horizontal.svg'
 
 const Header = (props) => (
   <header>
