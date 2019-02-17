@@ -37,9 +37,6 @@ const Header = (props) => (
             document.getElementById(e.target.dataset.target).classList.toggle("is-active")
           }}
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
         </Navbar.Burger>
       </Navbar.Brand>
 
@@ -51,29 +48,12 @@ const Header = (props) => (
           About
         </Navbar.Item>
 
-        <Navbar.Item className="has-dropdown is-hoverable">
-          <Navbar.Link renderAs={Link} to="/technology">
-            Technology
-          </Navbar.Link>
-
-          <Navbar.Dropdown>
-            <Navbar.Item renderAs={Link} to="/technology/reficere">
-              Reficere
-            </Navbar.Item>
-            <Navbar.Item renderAs={Link} to="/technology/flom">
-              flom
-            </Navbar.Item>
-            <Navbar.Item>
-              servoarray
-            </Navbar.Item>
-            <Navbar.Item>
-              Trainer
-            </Navbar.Item>
-          </Navbar.Dropdown>
+        <Navbar.Item renderAs={Link} to="/technology">
+          Technology
         </Navbar.Item>
 
-        <Navbar.Item>
-          Contact
+        <Navbar.Item renderAs="a" href="https://github.com/MonoMotion" target="_blank">
+          GitHub
         </Navbar.Item>
 
         <Navbar.Container position="end">
