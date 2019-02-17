@@ -7,14 +7,15 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Link, withRouter } from 'react-router-dom'
 import { Icon } from 'react-bulma-components'
 
-import logo from './images/Light_horizontal.svg'
+import darkLogo from './images/Dark_horizontal.svg'
+import lightLogo from './images/Light_horizontal.svg'
 
 const Header = (props) => (
   <header>
     <Navbar role="navigation" aria-label="main navigation">
       <Navbar.Brand>
         <Navbar.Item renderAs={Link} to="/">
-          <img src={logo} alt="MonoMotion" />
+          <img src={props.location.pathname === "/" ? lightLogo : darkLogo} alt="MonoMotion" />
         </Navbar.Item>
 
         <Navbar.Item className="is-hidden-desktop" renderAs="a" href="https://github.com/MonoMotion" target="_blank">
