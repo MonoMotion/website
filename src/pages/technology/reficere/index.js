@@ -13,7 +13,7 @@ const Post = () => (
       <Hero.Body>
         <Container>
           <Heading>
-            Reficere詳解
+            Reficere 詳解 - 物理と数式とちょっとの制御工学
           </Heading>
         </Container>
       </Hero.Body>
