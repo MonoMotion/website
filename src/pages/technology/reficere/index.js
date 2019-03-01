@@ -1,8 +1,7 @@
 import React from 'react'
 import Header from '../../../Header'
 
-/* eslint import/no-webpack-loader-syntax: off */
-import post from '!html-loader!!markdown-loader!./details.md'
+import PostContent from './details.md'
 
 import { Hero, Content, Container, Heading, Section } from 'react-bulma-components'
 
@@ -13,14 +12,14 @@ const Post = () => (
       <Hero.Body>
         <Container>
           <Heading>
-            Reficere詳解
+            Reficere 詳解 - 物理と数式とちょっとの制御工学
           </Heading>
         </Container>
       </Hero.Body>
     </Hero>
     <Section>
       <Content>
-        <div dangerouslySetInnerHTML={{ __html: post }} />
+        <PostContent />
       </Content>
     </Section>
   </div>

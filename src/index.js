@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import 'react-bulma-components/dist/react-bulma-components.min.css'
+import 'katex/dist/katex.css'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
