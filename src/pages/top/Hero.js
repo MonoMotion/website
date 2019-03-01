@@ -14,6 +14,10 @@ const BackgroundVideo = styled.video`
   object-fit: cover;
 `
 
+const MarginedButton = styled(Button)`
+  margin: 10px;
+`
+
 const Top = () => (
   <Hero color="dark" size="fullheight">
     <BackgroundVideo autoPlay muted loop>
@@ -33,12 +37,12 @@ const Top = () => (
           Design your robots' motion <strong>without the hassle</strong>
         </Heading>
         <div>
-          <Button color="white" href="#description" renderAs={AnchorLink}>
+          <MarginedButton color="white" href="#description" renderAs={AnchorLink}>
             See details
-          </Button>
-          <Button color="info" href="https://github.com/MonoMotion" target="_blank" renderAs="a">
+          </MarginedButton>
+          <MarginedButton color="info" href="https://github.com/MonoMotion" target="_blank" renderAs="a">
             GitHub
-          </Button>
+          </MarginedButton>
         </div>
       </Container>
     </Hero.Body>
