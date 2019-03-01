@@ -1,8 +1,7 @@
 import React from 'react'
 import Header from '../../../Header'
 
-/* eslint import/no-webpack-loader-syntax: off */
-import post from '!html-loader!!markdown-loader!./details.md'
+import post from './details.md'
 
 import { Hero, Content, Container, Heading, Section } from 'react-bulma-components'
 
