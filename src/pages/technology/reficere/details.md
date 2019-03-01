@@ -24,7 +24,7 @@ Reficereは、**ロボットの各リンク(関節に挟まれた部分: 太も�
 
 図0: 3Dモデルの例(手作りのYamaX 4.0というロボット)
 
-<img src="./images/fig0.png" width=200>
+![fig0]({{require('./images/fig0.png')}})
 
 Reficereでは重量測定の問題を大幅に改善し、あるリンクより上に位置するリンク全ての重量がわかれば、そのリンクの重量とリンク内での重心位置が、**放って置くだけで、短時間に、実用に耐えうる精度をもって**計測できます。これはつまり、ロボットの最上位リンクの重量がわかれば**全てのリンクの重量が漸化式のように芋づる式に計測可能**だということです(もちろんそうでない場合もあります)。
 
@@ -34,7 +34,7 @@ Reficereでは重量測定の問題を大幅に改善し、あるリンクより
 
 図1:
 
-<img src="./images/fig1.png" width=300>
+![fig1]({{require('./images/fig1.png')}})
 
 蛇足
 
@@ -50,11 +50,11 @@ Reficereでは重量測定の問題を大幅に改善し、あるリンクより
 
 写真1: 重心センサ 裏(地面側)から
 
-<img src="./images/pic1.jpg" width=300>
+![pic1]({{require('./images/pic1.jpg')}})
 
 写真2: 重心センサ ロードセルをメインに
 
-<img src="./images/pic2.jpg" width=300>
+![pic2]({{require('./images/pic2.jpg')}})
 
 ロードセルの詳しい使い方はここでは省略します。下のリンク等で確認できると思います。
 
@@ -122,13 +122,13 @@ $\theta,\alpha_n,\alpha_{n-1},\beta,\gamma$: 関節を曲げた角度[rad] 詳�
 
 図2: $h_{n-1}$の測定図
 
-<img src="./images/fig2.png" width=300>
+![fig2]({{require('./images/fig2.png')}})
 
 図2のように、上位リンクを角度$\theta$だけ曲げたときの足裏での重心位置の変化量を$x_1$とすると、**重心周りのモーメント和**から、以下の式1が与えられます。ただし、$x_1$は重心位置の変化量、$W​$はロボット全体の重量です。
 
 式1: $h_{n-1}$を求める計算式
 
-<img src="./images/stmt1.png" width=500>
+![stmt1]({{require('./images/stmt1.png')}})
 
 今回では**上位リンクの重量は与える**ことになっているので、この測定により$\boldsymbol h_{n-1}$**は既知の値のみで表すことができます**。
 
@@ -136,7 +136,7 @@ $\theta,\alpha_n,\alpha_{n-1},\beta,\gamma$: 関節を曲げた角度[rad] 詳�
 
 式1.1: $h_n$の別の計算式
 
-<img src="./images/stmt1.1.png" width=500>
+![stmt1.1]({{require('./images/stmt1.1.png')}})
 
 蛇足
 
@@ -162,7 +162,7 @@ $\theta,\alpha_n,\alpha_{n-1},\beta,\gamma$: 関節を曲げた角度[rad] 詳�
 
 図3:
 
-<img src="./images/fig3.png" width=300>
+![fig3]({{require('./images/fig3.png')}})
 
 詳しくは実装の項目で書きますが、ロボット自体の制御は非常に単純明快です。
 
@@ -170,7 +170,7 @@ $\theta,\alpha_n,\alpha_{n-1},\beta,\gamma$: 関節を曲げた角度[rad] 詳�
 
 式2: 重心位置不動の状態を示す式
 
-<img src="./images/stmt2.png" width=500>
+![stmt2]({{require('./images/stmt2.png')}})
 
 蛇足
 
@@ -204,11 +204,11 @@ $\theta,\alpha_n,\alpha_{n-1},\beta,\gamma$: 関節を曲げた角度[rad] 詳�
 
 図4: $\beta$の示す角度
 
-<img src="./images/fig4.png" width=300>
+![fig4]({{require('./images/fig4.png')}})
 
 図5: 測定Cの全体像
 
-<img src="./images/fig5.png" width=300>
+![fig5]({{require('./images/fig5.png')}})
 
 測定Cでの一番重要な点は、図5で、**ターゲットリンクの重心と上位リンクの重心を結んだ線が地面と垂直**になるようにする点です。これによって未知数をうまく消していけます。
 
@@ -220,11 +220,11 @@ $H_n​$はReficereで最終的に導きたい未知数の一つですので、$
 
 図6: 必要な角と長さ
 
-<img src="./images/fig6.png" width=300>
+![fig6]({{require('./images/fig6.png')}})
 
 式3: $H_n$を$\beta$で表す便利な式
 
-<img src="./images/stmt3.png" width=500>
+![stmt3]({{require('./images/stmt3.png')}})
 
 なお、式3では$tan​$内から$\pi​$という数値は**相互関係**を使って外しています。
 
@@ -240,17 +240,17 @@ $H_n​$はReficereで最終的に導きたい未知数の一つですので、$
 
 図7: 長さ$m$の定義
 
-<img src="./images/fig7.png" width=300>
+![fig7]({{require('./images/fig7.png')}})
 
 図7より、式4が導け、式4と式3($H_n​$を$\beta​$で表す便利な式)から、最終的に導きたい形で式5が導けます。
 
 式4: $m$を2通りで表してくっつける
 
-<img src="./images/stmt4.png" width=500>
+![stmt4]({{require('./images/stmt4.png')}})
 
 式5: $\gamma$と$\beta$の関係式
 
-<img src="./images/stmt5.png" width=500>
+![stmt5]({{require('./images/stmt5.png')}})
 
 ##### 重心線が地面と垂直になる状態の関係式
 
@@ -262,29 +262,29 @@ $w_n$を表す1つ目の式では、**式3**($H_n$を$\beta$で表す便利な�
 
 図8: $sin(\alpha_n+\beta)$を求める
 
-<img src="./images/fig8.png" width=300>
+![fig8]({{require('./images/fig8.png')}})
 
 これについて、$sin(\alpha_n+\beta)$を2通りで表します。緑色の三角形について素直に**三角比の定義と相互関係**を使って表すと式6になります。
 
 式6: $sin(\alpha_n+\beta)$表し方1
 
-<img src="./images/stmt6.png" width=500>
+![stmt6]({{require('./images/stmt6.png')}})
 
 また、**加法定理**で$sin(\alpha_n+\beta)$を分解して、図から導ける式7を代入すると、式8ができます。
 
 式7: $\beta​$の三角関数
 
-<img src="./images/stmt7.png" width=500>
+![stmt7]({{require('./images/stmt7.png')}})
 
 式8: $sin(\alpha_n+\beta)$表し方2
 
-<img src="./images/stmt8.png" width=500>
+![stmt8]({{require('./images/stmt8.png')}})
 
 式3($H_n$を$\beta$で表す便利な式)と式6と式8を連立して$H_n$、$\beta$、$s$、$t$を消去すると式9になります。
 
 式9: $w_n$の表し方1
 
-<img src="./images/stmt9.png" width=500>
+![stmt9]({{require('./images/stmt9.png')}})
 
 測定Cの状態を表す式を作るために、2つの$w_n$を表す式を使うことにしたうちの1つが式9で出てきたところです。
 
@@ -302,13 +302,13 @@ $w_n$を表す1つ目の式では、**式3**($H_n$を$\beta$で表す便利な�
 
 式10: $w_n​$の表し方2の元の式
 
-<img src="./images/stmt10.png" width=500>
+![stmt10]({{require('./images/stmt10.png')}})
 
 これを式3($H_n$を$\beta$で表す便利な式)で$\boldsymbol H_n$**を消して整える**と式11ができます。
 
 式11: $w_n​$の表し方2
 
-<img src="./images/stmt11.png" width=500>
+![stmt11]({{require('./images/stmt11.png')}})
 
 蛇足
 
@@ -320,7 +320,7 @@ $w_n$を表す1つ目の式では、**式3**($H_n$を$\beta$で表す便利な�
 
 式12: 測定Cの状態を表す式
 
-<img src="./images/stmt12.png" width=500>
+![stmt12]({{require('./images/stmt12.png')}})
 
 蛇足
 
@@ -332,7 +332,7 @@ $w_n$を表す1つ目の式では、**式3**($H_n$を$\beta$で表す便利な�
 
 グラフ1: 理論値(事前に分解して測定した値)に基づいた測定Cのグラフ
 
-<img src="./images/plot1.png" width=500>
+![olot1]({{require('./images/plot1.png')}})
 
 グラフ1で緑は、横軸$\beta$によって式5から算出した$\gamma$[度]、赤は$w_n$を実測した値から導いた、図6の状態でのロボット全体の重心位置$x_3$[mm]で、計測には関係ありますが実装には関係ない値です。
 
@@ -352,11 +352,11 @@ $w_n$を表す1つ目の式では、**式3**($H_n$を$\beta$で表す便利な�
 
 式9: $w_n$の計算式
 
-<img src="./images/stmt9.png" width=500>
+![stmt9]({{require('./images/stmt9.png')}})
 
 式3: $H_n​$の計算式
 
-<img src="./images/stmt3.png" width=500>
+![stmt3]({{require('./images/stmt3.png')}})
 
 ## 最後に
 
@@ -376,11 +376,11 @@ Reficereの式はかなり複雑なのと時間がなかったのとで、数学
 
 参考資料1: 計算式・途中式・図
 
-<img src="./images/reference1.png" width=500>
+![reference1]({{require('./images/reference1.png')}})
 
 参考資料2: 重心測定関係の計算式
 
-<img src="./images/reference2.png" width=500>
+![reference2]({{require('./images/reference2.png')}})
 
 ## 変更履歴
 
