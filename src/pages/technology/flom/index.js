@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../../Header'
 
-import post from './details.md'
+import PostContent from './details.md'
 
 import { Hero, Content, Container, Heading, Section } from 'react-bulma-components'
 
@@ -19,7 +19,7 @@ const Post = () => (
     </Hero>
     <Section>
       <Content>
-        <div dangerouslySetInnerHTML={{ __html: post }} />
+        <PostContent />
       </Content>
     </Section>
   </div>

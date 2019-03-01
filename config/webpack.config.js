@@ -454,17 +454,11 @@ module.exports = function(webpackEnv) {
               ),
             },
             {
-                test: /\.md$/,
-                use: [
-                    {
-                        loader: "html-loader"
-                    },
-                    {
-                        loader: "markdown-loader",
-                        options: {
-                        }
-                    }
-                ]
+              test: /\.md$/,
+              loader: [
+                'babel-loader',
+                '@hugmanrique/react-markdown-loader'
+              ]
             },
             // "file" loader makes sure those assets get served by WebpackDevServer.
             // When you `import` an asset, you get its (virtual) filename.
