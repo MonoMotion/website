@@ -455,9 +455,19 @@ module.exports = function(webpackEnv) {
             },
             {
               test: /\.md$/,
-              loader: [
+              use: [
                 'babel-loader',
-                '@hugmanrique/react-markdown-loader'
+                {
+                  loader: '@hugmanrique/react-markdown-loader',
+                  options: {
+                    remarkPlugins: [
+                      require('remark-math')
+                    ],
+                    rehypePlugins: [
+                      require('rehype-katex')
+                    ]
+                  }
+                }
               ]
             },
             // "file" loader makes sure those assets get served by WebpackDevServer.
