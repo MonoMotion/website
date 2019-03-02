@@ -59,6 +59,7 @@
     "remark-autolink-headings": "^5.1.0",
     "remark-math": "^1.0.5",
     "remark-slug": "^5.1.1",
+    "remark-toc": "^5.1.1",
     "resolve": "1.10.0",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
