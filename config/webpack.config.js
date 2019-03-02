@@ -461,7 +461,9 @@ module.exports = function(webpackEnv) {
                   loader: '@hugmanrique/react-markdown-loader',
                   options: {
                     remarkPlugins: [
-                      require('remark-math')
+                      require('remark-math'),
+                      require('remark-slug'),
+                      require('remark-autolink-headings')
                     ],
                     rehypePlugins: [
                       require('rehype-katex')
